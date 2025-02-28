@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="growthCalc.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Investment Growth Calculator</title>
+        
+    </head>
+
+    <body>
+
+        <header>
+            <img src="calcLogo.png" alt="Website Logo" width="200" height="200">
+            <h1>Welcome to the</h1>
+            <h2>Investment Growth Calculator</h2>
+        </header>
+        <div class="form-container">
+            <div class="textNextForm">
+                <p>This tool allows you to estimate the future value of your investment based on three key factors:</p>
+                <p>By entering these details, the calculator will calculate the future value of your investment at the time of retirement. It considers compound interest, meaning your investment will grow not only based on your initial amount but also on the interest it accumulates over time.</p>
+                <p>Enter your data in the form below, and click "Submit" to see your investment's estimated worth at the time of retirement!</p>
+                <form  onsubmit="return getCompoundInterest()">
+                    <label for="initialinvst">Initial Investment Amount:</label>
+                    <input type="number" id="initialinvst" name="initialinvst"><br><br>
+                    <label for="annualRate">Annual Interest Rate % yearly growth:</label>
+                    <input type="number" id="annualRate" name="annualRate"><br><br>
+                    <label for="yrRetire">Year of planned retirement: </label>
+                    <input type="number" id="yrRetire" name="yrRetire"><br><br>
+                    <input type="submit" value="Submit"><br><br>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+
+    
+</html>
